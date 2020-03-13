@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PolicySpace",
+	"scopeName": "source.pspace",
+	"comment": "guide can be found here - https://macromates.com/manual/en/language_grammars",
+	"patterns": [
+		{"include": "#descriptions"}
+		,{"include": "#comments"}
+	],
+	"repository": {
+		"descriptions": {
+			"name": "string.quoted.double.policyspace",
+			"begin": "\\[",
+			"end": "\\]"
+		},
+		"comments": {
+			"patterns": [
+				{"include": "#line_comment"}
+				,{"include": "#block_comment"}
+			]
+		},
+		"line_comment": {
+			"patterns": [
+				{
+					"name": "comment.line.policyspace",
+					"begin": "<--",
+					"end": "\n"
+				}
+			]
+		},
+		"block_comment": {
+			"patterns": [
+				{
+					"name": "comment.block.policyspace",
+					"begin": "<\\*",
+					"end": "\\*>"
+				}
+			]
+		}
+	}
+}

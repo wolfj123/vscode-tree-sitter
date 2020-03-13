@@ -22,13 +22,14 @@
 		"Themes",
 		"Other"
 	],
-	"activationEvents": [
+	"activationEvents": [ 
 		"onLanguage:go",
 		"onLanguage:cpp",
 		"onLanguage:rust",
 		"onLanguage:ruby",
 		"onLanguage:typescript",
-		"onLanguage:javascript"
+		"onLanguage:javascript",
+		"onLanguage:policyspace"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -62,6 +63,24 @@
 				"language": "javascript",
 				"scopeName": "source.ts",
 				"path": "./textmate/typescript.tmLanguage.json"
+			},
+			{
+				"language": "policyspace",
+				"scopeName": "source.pspace",
+				"path": "./textmate/policyspace.tmLanguage.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "policyspace",
+				"aliases": [
+					"PolicySpace",
+					"policyspace"
+				],
+				"extensions": [
+					".pspace"
+				],
+				"configuration": "./pspace-graph-language-configuration.json"
 			}
 		]
 	},
@@ -83,6 +102,7 @@
 		"tree-sitter-cpp": "^0.16.0",
 		"tree-sitter-go": "^0.16.0",
 		"tree-sitter-javascript": "^0.16.0",
+		"tree-sitter-policyspace": "^1.0.0",
 		"tree-sitter-ruby": "^0.16.1",
 		"tree-sitter-rust": "^0.16.0",
 		"tree-sitter-typescript": "^0.16.1",

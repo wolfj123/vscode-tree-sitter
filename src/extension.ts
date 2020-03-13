@@ -12,7 +12,8 @@ const languages: {[id: string]: {module: string, color: colors.ColorFunction, pa
 	'ruby': {module: 'tree-sitter-ruby', color: colors.colorRuby},
 	'typescript': {module: 'tree-sitter-typescript', color: colors.colorTypescript},
 	// TODO there is a separate JS grammar now
-	'javascript': {module: 'tree-sitter-javascript', color: colors.colorTypescript},
+	'javascript': {module: 'tree-sitter-javascript', color: colors.colorTypescript}
+	//,'policyspace': {module: 'tree-sitter-policyspace', color: colors.colorPolicySpace}
 }
 
 // Create decoration types from scopes lazily

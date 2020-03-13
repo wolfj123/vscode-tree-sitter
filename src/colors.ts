@@ -595,6 +595,18 @@ export function colorCpp(root: Parser.Tree, visibleRanges: {start: number, end: 
 	])
 }
 
+export function colorPolicySpace(root: Parser.Tree, visibleRanges: {start: number, end: number}[]) {
+	const functions: Range[] = []
+	const types: Range[] = []
+	const variables: Range[] = []
+
+	return new Map([
+		['entity.name.function', functions],
+		['entity.name.type', types],
+		['variable', variables],
+	])
+}
+
 function isVisible(x: Parser.SyntaxNode, visibleRanges: {start: number, end: number}[]) {
 	for (const {start, end} of visibleRanges) {
 		const overlap = x.startPosition.row <= end+1 && start-1 <= x.endPosition.row
