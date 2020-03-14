@@ -22,7 +22,7 @@
 		"Themes",
 		"Other"
 	],
-	"activationEvents": [ 
+	"activationEvents": [
 		"onLanguage:go",
 		"onLanguage:cpp",
 		"onLanguage:rust",
