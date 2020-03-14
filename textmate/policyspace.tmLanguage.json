@@ -2,10 +2,11 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "PolicySpace",
 	"scopeName": "source.pspace",
-	"comment": "guide can be found here - https://macromates.com/manual/en/language_grammars",
+	"comment": "guide can be found here - https://macromates.com/manual/en/language_grammars   |  for oniguruma regex - https://raw.githubusercontent.com/kkos/oniguruma/master/doc/RE",
 	"patterns": [
 		{"include": "#descriptions"}
 		,{"include": "#comments"}
+		,{"include": "#keywords"}
 	],
 	"repository": {
 		"descriptions": {
@@ -13,6 +14,31 @@
 			"begin": "\\[",
 			"end": "\\]"
 		},
+		"keywords": {
+			"patterns" : [
+				{"include": "#one_of"}
+				,{"include": "#some_of"}
+				,{"include": "#consists_of"}
+				,{"include": "#todo"}
+			]
+		},
+		"one_of": {
+			"name": "keyword.policyspace",
+			"match": "\\b(one\\s*of)\\b"
+		},
+		"some_of": {
+			"name": "keyword.policyspace",
+			"match": "\\b(some\\s*of)\\b"
+		},
+		"consists_of": {
+			"name": "keyword.policyspace",
+			"match": "\\b(consists\\s*of)\\b"
+		},
+		"todo": {
+			"name": "keyword.policyspace",
+			"match": "\\b(todo|TODO)\\b"
+		},
+
 		"comments": {
 			"patterns": [
 				{"include": "#line_comment"}

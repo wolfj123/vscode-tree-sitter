@@ -630,15 +630,17 @@ export function colorPolicySpace(root: Parser.Tree, visibleRanges: {start: numbe
 			continue
 		}
 		// Color tokens
-		// const parent = parents[parents.length - 1]
-		// const grandparent = parents[parents.length - 2]
+		const parent = parents[parents.length - 1]
+		const grandparent = parents[parents.length - 2]
 		switch (cursor.nodeType) {
-			case 'slot':
-					functions.push({start: cursor.startPosition, end: cursor.endPosition})
-				break
 			case 'identifier_simple':
+				if (parent == 'slot' || (parent == 'identifier_with_desc' && grandparent == 'slot')) {
+					functions.push({start: cursor.startPosition, end: cursor.endPosition})
+				}
+				else {
 					variables.push({start: cursor.startPosition, end: cursor.endPosition})
-				break
+				}
+			break
 		}
 	}
 
