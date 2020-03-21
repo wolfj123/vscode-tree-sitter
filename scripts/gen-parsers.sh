@@ -12,5 +12,7 @@ set -e
 ./node_modules/.bin/tree-sitter build-wasm ./node_modules/tree-sitter-rust
 ./node_modules/.bin/tree-sitter build-wasm ./node_modules/tree-sitter-typescript/typescript
 ./node_modules/.bin/tree-sitter build-wasm ./node_modules/tree-sitter-javascript
+./node_modules/.bin/tree-sitter build-wasm ./node_modules/tree-sitter-policyspace
+./node_modules/.bin/tree-sitter build-wasm ./node_modules/tree-sitter-decisiongraph
 
 mv *.wasm parsers
