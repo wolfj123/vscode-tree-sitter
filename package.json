@@ -3,7 +3,7 @@
 	"displayName": "Tree Sitter Policy Models",
 	"description": "Syntax coloring with tree-sitter for PolicyModels",
 	"icon": "tree-sitter-small.png",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"preview": true,
 	"publisher": "wolfj123",
 	"repository": {
