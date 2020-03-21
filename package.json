@@ -23,47 +23,11 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:go",
-		"onLanguage:cpp",
-		"onLanguage:rust",
-		"onLanguage:ruby",
-		"onLanguage:typescript",
-		"onLanguage:javascript",
 		"onLanguage:policyspace"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"grammars": [
-			{
-				"language": "go",
-				"scopeName": "source.go",
-				"path": "./textmate/go.tmLanguage.json"
-			},
-			{
-				"language": "cpp",
-				"scopeName": "source.cpp",
-				"path": "./textmate/cpp.tmLanguage.json"
-			},
-			{
-				"language": "ruby",
-				"scopeName": "source.ruby",
-				"path": "./textmate/ruby.tmLanguage.json"
-			},
-			{
-				"language": "rust",
-				"scopeName": "source.rust",
-				"path": "./textmate/rust.tmLanguage.json"
-			},
-			{
-				"language": "typescript",
-				"scopeName": "source.ts",
-				"path": "./textmate/typescript.tmLanguage.json"
-			},
-			{
-				"language": "javascript",
-				"scopeName": "source.ts",
-				"path": "./textmate/typescript.tmLanguage.json"
-			},
 			{
 				"language": "policyspace",
 				"scopeName": "source.pspace",
