@@ -1,14 +1,14 @@
 {
-	"name": "vscode-tree-sitter",
+	"name": "vscode-tree-sitter-policymodels",
 	"displayName": "Tree Sitter",
-	"description": "Accurate syntax coloring with tree-sitter",
+	"description": "Syntax coloring with tree-sitter for PolicyModels",
 	"icon": "tree-sitter-small.png",
-	"version": "0.1.25",
+	"version": "0.1.0",
 	"preview": true,
-	"publisher": "georgewfraser",
+	"publisher": "wolfj123",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/georgewfraser/vscode-tree-sitter"
+		"url": "https://github.com/wolfj123/vscode-tree-sitter-policymodels"
 	},
 	"license": "MIT",
 	"extensionKind": [
