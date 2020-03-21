@@ -3,7 +3,7 @@
 	"displayName": "Tree Sitter Policy Models",
 	"description": "Syntax coloring with tree-sitter for PolicyModels",
 	"icon": "tree-sitter-small.png",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"preview": true,
 	"publisher": "wolfj123",
 	"repository": {
@@ -54,7 +54,8 @@
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "npm run compile && node ./out/test",
 		"benchmark": "npm run compile && node ./out/benchmark",
-		"debug": "npm run compile && node --nolazy --inspect-brk=9229 ./out/test"
+		"debug": "npm run compile && node --nolazy --inspect-brk=9229 ./out/test",
+		"build": "vsce package -o build.vsix"
 	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
